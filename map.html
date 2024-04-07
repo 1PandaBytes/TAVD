@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+    /* Targeting paragraphs specifically and ensuring high specificity */
+p[id]:target {
+  padding-top: 100px; 
+  margin-top: -100px; 
+  display: block; 
+ background-color: lightgoldenrodyellow;
+}
+
+body, h1, h2, h3, h4, h5 {font-family: "Poppins", sans-serif}
+body {font-size: 16px;}
+.w3-half img {margin-bottom: -6px; margin-top: 16px; opacity: 0.8; cursor: pointer;}
+.w3-half img:hover {opacity: 1;}
+u {color: red;}
+
+/* Updated link colors and hover styles */
+a:link {color: blue;}
+a:visited {color: purple;}
+a:hover, a:active, a:focus {
+  background-color: lightblue; /* Light blue background for links on hover/active/focus */
+}
+
+/* Sidebar and header styling to match the dark red theme */
+.w3-sidebar, .w3-top, .w3-button { 
+  background-color: #8B0000 !important; /* Dark red background */
+  color: white !important; /* Ensures sidebar text is white */
+}
+
+/* Ensure sidebar links are white for readability */
+.w3-sidebar a, .w3-sidebar a:link, .w3-sidebar a:visited {
+  color: white !important;
+  text-decoration: none;
+}
+
+   
+
+/* Color correction for the "Global opportunities" header */
+.w3-text-red, .w3-round {
+    color: #8B0000 !important; /* Making sure it's the desired dark red */
+    border-color: #8B0000 !important; /* Ensuring the HR matches */
+}
+
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar dark-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <a class href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px; color:white; text-decoration: none; position:relative; left:240px;" >X</a>
+    <div class="w3-container">
+      <h3 class="w3-padding-64" style=color:white; ><b><strong>The Australian Volunteering Directory</strong></b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <nav>
+        <a class="page" href="./index.html" style="color: white; text-decoration: none;">Home</a><br><br>
+  <a class="page" href="./skills.html" style="color: white; text-decoration: none;">Skill sets</a><br><br>
+  <a class="page" href="./map.html" style="color: white; text-decoration: none;">Global opportunities</a><br><br>
+  <a class="page" href="./founding.html" style="color: white; text-decoration: none;">Service entrepreneurship</a><br><br>
+  <a class="page" href="./donate.html" style="color: white; text-decoration: none;">Charities</a><br><br>
+  <a class="page" href="./easteregg.html" style="color: white; text-decoration: none;">Where the day goes..</a><br><br>
+  
+      </nav>
+    </div>
+  </nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()">☰</a>
+  <span>The Australian Volunteering Directory</span>
+</header>
+
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+    <!-- Header -->
+    <div class="w3-container" style="margin-top:80px" id="showcase">
+      <h1 class="w3-jumbo"><b>Global opportunities</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <h2 class=" w3-text-red"><b>A world of possibilities..(click on a flag)</b></h2>
+        
+    </div>
+    <!--Flag Images-->
+    <a href="#Australia"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg" alt="Australian flag" width="200"></a>
+    <a href="#Brazil"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1200px-Flag_of_Brazil.svg.png" alt="Brazilian flag" width="200"></a>
+    <a href="#Cambodia"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_Cambodia.svg/1200px-Flag_of_Cambodia.svg.png" alt="Cambodian flag" width="200"></a>
+    <a href="#Canada"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Flag_of_Canada_%28Pantone%29.svg/640px-Flag_of_Canada_%28Pantone%29.svg.png" alt="Canadian flag" width="200"></a>
+    <a href="#China"><img src="https://flagsofallnations.com.au/cdn/shop/products/china.jpg?v=1558054621" alt="Chinese flag" width="200"></a>
+    <a href="#Costa-Rica"><img src="https://cdn.britannica.com/25/7225-004-65F33B16/Flag-Costa-Rica.jpg" alt="Costa Rican flag" width="200"></a>
+    <a href="#Egypt"><img src="https://cdn.britannica.com/85/185-004-1EA59040/Flag-Egypt.jpg" alt="Egyptian flag" width="200"></a>
+    <a href="#France"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png" alt="French flag" width="200"></a>
+    <a href="#Ghana"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Flag_of_Ghana.svg/1200px-Flag_of_Ghana.svg.png" alt="Ghana flag" width="200"></a>
+    <a href="#India"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1200px-Flag_of_India.svg.png" alt="Indian flag" width="200"></a>
+    <a href="#Italy"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Flag_of_Italy_%28Pantone%2C_2006%29.svg/220px-Flag_of_Italy_%28Pantone%2C_2006%29.svg.png" alt="Italian flag" width="200"></a>
+    <a href="#Jamaica"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Jamaica.svg/800px-Flag_of_Jamaica.svg.png" alt="Jamaican flag" width="200"></a>
+    <a href="#Kenya"><img src="https://cdn.britannica.com/15/15-004-B5D6BF80/Flag-Kenya.jpg" alt="Kenyan flag" width="200"></a>
+    <a href="#Madagascar"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_Madagascar.svg/1200px-Flag_of_Madagascar.svg.png" alt="Madagascar flag" width="200"></a>
+    <a href="#Mexico"><img src="https://flagsofallnations.com.au/cdn/shop/products/mexico.jpg?v=1558054698" alt="Mexican flag" width="200"></a>
+    <a href="#Nepal"><img src="https://i.etsystatic.com/27450696/r/il/39f9cb/5118627189/il_570xN.5118627189_rwkc.jpg" alt="Nepal flag" width="200"></a>
+    <a href="#Peru"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr4DfcTiqX37qGUbytnfZ2QxLoVidWqpggxY7EyN_d7g&s" alt="Peru flag" width="200"></a>
+    <a href="#Philippines"><img src="https://www.flagworld.com.au/media/catalog/product/cache/a6ca1c50b34e20b9d78cc952c1ddb8d8/n/3/n33hf.jpg" alt="Philippines flag" width="200"></a>
+    <a href="#Russia"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png" alt="Russian flag" width="200"></a>
+    <a href="#South-Africa"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/1200px-Flag_of_South_Africa.svg.png" alt="South African flag" width="200"></a>
+    <a href="#Spain"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Flag_of_Spain.svg/800px-Flag_of_Spain.svg.png" alt="Spanish flag" width="200"></a>
+    <a href="#Sweden"><img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg" alt="Swedish flag" width="200"></a>
+    <a href="#Tanzania"><img src="https://cdn.britannica.com/20/20-004-EB20A026/Flag-Tanzania.jpg" alt="Tanzanian flag" width="200"></a>
+    <a href="#Thailand"><img src="https://cdn.britannica.com/38/4038-050-BDDBA6AB/Flag-Thailand.jpg" alt="Thailand flag" width="200"></a>
+    <a href="#Turkey"><img src="https://cdn.britannica.com/82/4782-004-4119489D/Flag-Turkey.jpg" alt="Turkey flag" width="200"></a>
+    <a href="#Uganda"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flag_of_Uganda.svg/1200px-Flag_of_Uganda.svg.png" alt="Uganda flag" width="200"></a>
+    <a href="#United-Kingdom"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png" alt="United Kingdom flag" width="200"></a>
+    <a href="#United-States"><img src="https://cdn.britannica.com/33/4833-004-828A9A84/Flag-United-States-of-America.jpg" alt="United States flag" width="200"></a>
+    <a href="#Vietnam"><img src="https://cdn.britannica.com/41/4041-050-BB4577F8/Flag-Vietnam.jpg" alt="Vietnamese flag" width="200"></a>
+    <a href="#Zambia"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Flag_of_Zambia.svg/1200px-Flag_of_Zambia.svg.png" alt="Zambian flag" width="200"></a>
+  
+    <!--Opportunity description-->
+    <span style="font-size: large;">
+    <p id="Australia"><u>Australia</u>: Wildlife conservation efforts, specifically koala habitat restoration.</p><br><br><br><br>
+  <p id="Brazil"><u>Brazil</u>: Amazon rainforest reforestation and environmental education.</p><br><br><br><br>
+  <p id="Cambodia"><u>Cambodia</u>: Teaching English to children in rural schools.</p><br><br><br><br>
+  <p id="Canada"><u>Canada</u>: Supporting indigenous communities through cultural exchange and education.</p><br><br><br><br>
+  <p id="China"><u>China</u>: Panda conservation and research assistance in Chengdu.</p><br><br><br><br>
+  <p id="Costa-Rica"><u>Costa Rica</u>: Sea turtle conservation, including beach patrols and data collection.</p><br><br><br><br>
+  <p id="Egypt"><u>Egypt</u>: Archaeological volunteering, assisting in historical digs and preservation.</p><br><br><br><br>
+  <p id="France"><u>France</u>: Restoration of historic castles and cultural heritage sites.</p><br><br><br><br>
+  <p id="Ghana"><u>Ghana</u>: Public health campaigns focusing on malaria prevention and education.</p><br><br><br><br>
+  <p id="India"><u>India</u>: Women’s empowerment projects through skill development and education.</p><br><br><br><br>
+  <p id="Italy"><u>Italy</u>: Food rescue and distribution to combat food waste and support the needy.</p><br><br><br><br>
+  <p id="Jamaica"><u>Jamaica</u>: Coral reef restoration and marine biodiversity projects.</p><br><br><br><br>
+  <p id="Kenya"><u>Kenya</u>: Sustainable agriculture projects to improve food security and local economies.</p><br><br><br><br>
+  <p id="Madagascar"><u>Madagascar</u>: Lemur conservation efforts and habitat restoration.</p><br><br><br><br>
+  <p id="Mexico"><u>Mexico</u>: Building homes for families in need with local NGOs.</p><br><br><br><br>
+  <p id="Nepal"><u>Nepal</u>: Earthquake recovery and rebuilding efforts, including schools and community centers.</p><br><br><br><br>
+  <p id="Oman"><u>Oman</u>: Turtle conservation and protection of nesting sites.</p><br><br><br><br>
+  <p id ="Peru"><u>Peru</u>: Assisting in local clinics and health education in rural communities.</p><br><br><br><br>
+  <p id ="Philippines"><u>Philippines</u>: Mangrove reforestation and environmental protection projects.</p><br><br><br><br>
+  <p id ="Russia"><u>Russia</u>: Teaching computer skills to children and adults in underserved communities.</p><br><br><br><br>
+  <p id ="South-Africa"><u>South Africa</u>: Anti-poaching initiatives and wildlife monitoring.</p><br><br><br><br>
+  <p id ="Spain"><u>Spain</u>: Supporting sustainable tourism projects and community development.</p><br><br><br><br>
+  <p id ="Sweden"><u>Sweden</u>: Focusing on community education on renewable energy, promoting sustainable agriculture, and developing green urban spaces.</p><br><br><br><br>
+  <p id ="Tanzania"><u>Tanzania</u>: Clean water projects, including building wells and sanitation education.</p><br><br><br><br>
+  <p id ="Thailand"><u>Thailand</u>: Elephant conservation and care in ethical sanctuaries.</p><br><br><br><br>
+  <p id ="Turkey"><u>Turkey</u>: Cultural exchange and English teaching in schools.</p><br><br><br><br>
+  <p id ="Uganda"><u>Uganda</u>: HIV/AIDS awareness and health education programs.</p><br><br><br><br>
+  <p id ="United-Kingdom"><u>United Kingdom</u>: Assisting in community gardens and urban greening projects.</p><br><br><br><br>
+  <p id ="United-States"><u>United States</u>: National park service and conservation volunteering.</p><br><br><br><br>
+  <p id ="Vietnam"><u>Vietnam</u>: Supporting small business development and entrepreneurship in rural areas.</p><br><br><br><br>
+  <p id ="Zambia"><u>Zambia</u>: Wildlife research and conservation, focusing on lions and elephant populations.</p><br><br><br><br>
+</span>
+ <!--Credits-->
+ <p style="color:black; background-color: rgb(251,251,243); padding: 50px;">Created by PandaBytes</p>
+ <img src="images/Panda Bytes.jpeg" width="70px" style="position: relative; left:250px; bottom:115px" >
+
+  <!-- End page content --!>
+
+ 
+
+
+  <!--TAVD LOGO-->
+  <img src="images/TAVD Logo.png" width="80px" style="position: fixed;bottom: 25px; right:20px">
+</div>
+
+  
+  
+  <script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+   
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  
+  </script>
+  
+  </body>
+  </html>
+  

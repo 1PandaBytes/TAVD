@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+img{border:double 10px #8B0000}
+
+
+
+a:link {
+    color: blue;
+}
+a:visited {
+    color: purple;
+}
+a:hover { 
+    background-color: lightblue; 
+}  
+a:active {
+    background-color:lightblue; 
+} 
+a:focus {
+    background-color: lightblue;
+}
+
+/* Sidebar and header styling to match the dark red theme */
+.w3-sidebar, .w3-top, .w3-button { 
+  background-color: #8B0000 !important; 
+  color: white !important; 
+}
+
+.w3-sidebar, .w3-top, .w3-button { 
+  background-color: #8B0000; /* Dark red background */
+}
+
+.w3-sidebar a, .w3-sidebar .w3-bar-block a {
+  color: white !important; 
+  text-decoration: none; 
+}
+
+/* Fixes for potential white box  */
+.w3-sidebar .w3-bar-block a {
+  background-color: transparent; 
+}
+
+
+/* Highlight for active page or targeted elements */
+.page, span:target {
+    background-color: lightgoldenrodyellow; 
+
+}
+.dark-red {
+    color: #8B0000; }
+
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar dark-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a class href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px; color:white; text-decoration: none; position:relative; left:240px;" >X</a>
+
+  <div class="w3-container">
+    <h3 class="w3-padding-64" style=color:white; ><b><strong>The Australian Volunteering Directory</strong></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <nav>
+      <a class="page" href="./index.html" style="color: white; text-decoration: none;">Home</a><br><br>
+<a class="page" href="./skills.html" style="color: white; text-decoration: none;">Skill sets</a><br><br>
+<a class="page" href="./map.html" style="color: white; text-decoration: none;">Global opportunities</a><br><br>
+<a class="page" href="./founding.html" style="color: white; text-decoration: none;">Service entrepreneurship</a><br><br>
+<a class="page" href="./donate.html" style="color: white; text-decoration: none;">Charities</a><br><br>
+<a class="page" href="./easteregg.html" style="color: white; text-decoration: none;">Where the day goes..</a><br><br>
+
+    </nav>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-margin-right" onclick="w3_open()">☰</a>
+  <span>The Australian Volunteering Directory</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- PAGE CONTENT -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Skills sets</b></h1>
+    <hr style="width:50px;border:5px solid #8B0000" class="w3-round">
+    <h2 class="dark-red"><b>How your skills can benefit the world:</b></h2>
+    <!-- Body content remains unchanged -->
+    
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main">
+    
+        <!--Body text-->
+    <div>
+        <ul>
+            <strong><p class="skill-titles">Communication Skills</p></strong>
+            <li>Community outreach coordinator</li>
+            <li>Support helpline volunteer</li>
+            <li>Speaking to people new to the language</li>
+        </ul>
+        <img src="https://www.rockdovesolutions.com/hubfs/Blog_Photos/What%20Is%20Crisis%20Communication%20A%20Guide%20for%20Beginners.jpg#keepProtocol" alt="Communication Image" width="300">
+        <ul>
+            <strong><p class="skill-titles">Empathy</p></strong>
+            <li>Refugee support volunteer</li>
+            <li>Social work assistant</li>
+            <li>Diversity and inclusion facilitator</li>
+        </ul>
+        <img src="https://acendahealth.org/wp-content/uploads/2021/02/empathy.jpg"alt="Empathy Image" width="300">
+        <ul>
+            <strong><p class="skill-titles">Organizational Skills</p></strong>
+            <li>Event planning volunteer</li>
+            <li>Administrative support volunteer</li>
+            <li>Volunteer project manager</li>
+        </ul>
+        <img src="https://media.istockphoto.com/id/1225434038/vector/team-members-sharing-ideas-during-brainstorm-set.jpg?s=612x612&w=0&k=20&c=ErH_zWwoFEOKlOwR8Ccrzt7k8fxFJ-u4povGtU8KLVg="alt="People ticking off a list" width="300">
+        <ul>
+            <strong><p class="skill-titles">Problem-Solving Skills</p></strong>
+            <li>Disaster relief worker</li>
+            <li>Environmental conservation volunteer</li>
+            <li>Crisis counselor</li>
+        </ul>
+        <img src="https://cdn.seeklearning.com.au/media/images/career-guide/article/career-advice/web_images/blogs/214/6715/2023.000_NOV-CANDI_Blog_Problem_Solving_1280x660.webp"alt="Kady putting togather light bulb" width="300">
+        <ul>
+            <strong><p class="skill-titles">Tech Skills</p></strong>
+            <li>Teach coding</li>
+            <li>Web development volunteer</li>
+            <li>Data analysis for research projects</li>
+        </ul>
+        <img src="https://www.techopedia.com/wp-content/uploads/2023/02/dreamstime_m_126792558-1.jpg"alt="Man staring at screen" width="300">
+        <ul>
+            <strong><p class="skill-titles">Medical Knowledge</p></strong>
+            <li>Medical camp assistant</li>
+            <li>Health awareness campaigner</li>
+            <li>Emergency medical responder</li>
+        </ul>
+        <ul>
+            <strong><p class="skill-titles">Teaching Skills</p></strong>
+            <li>Educational program tutor</li>
+            <li>Skills development workshop leader</li>
+            <li>Literacy campaign volunteer</li>
+        </ul>
+        <img src="https://a.storyblok.com/f/120667/1560x1100/cb055d6fff/quality-digital-medical-knowledge-hero.jpeg"alt="Man looking at atoms" width="300">
+        <ul>
+            <strong><p class="skill-titles">Gardening Skills</p></strong>
+            <li>Environmental clean-up crew member</li>
+            <li>Help neighbors garden</li>
+            <li>Community garden helper</li>
+        </ul>
+        <img src="https://media.istockphoto.com/id/1221447851/vector/man-digs-soil-with-shovel-on-farm-person-in-protective-gloves-and-boots-grows-organic-food.jpg?s=612x612&w=0&k=20&c=x7BekAnbeypjZMVFUSSyAXd88FNJofY6gNpM7_WS0dw="alt="Boy with shovel" width="300">
+        <ul>
+            <strong><p class="skill-titles">Marketing Skills</p></strong>
+            <li>Non-profit fundraising coordinator</li>
+            <li>Social media volunteer</li>
+            <li>Campaign strategist for awareness programs</li>
+        </ul>
+        <img src="https://cydomedia.com/wp-content/uploads/2022/10/In-Demand-Marketing-Skills-That-You-Need-For-Career-Growth.jpg"alt="Marketing Team" width="300">
+        <ul>
+            <strong><p class="skill-titles">Adaptability</p></strong>
+            <li>Emergency response volunteer</li>
+            <li>Volunteer in startups</li>
+            <li>Humanitarian aid</li>
+        </ul>
+        <img src="https://whatfix.com/blog/wp-content/uploads/2021/10/Adaptablity-in-workplace.png"alt="Team pulling on heavy ball marked change" width="300">
+        <ul>
+            <strong><p class="skill-titles">Creative Skills</p></strong>
+            <li>Content creator for non-profit marketing</li>
+            <li>Arts and crafts instructor for community programs</li>
+            <li>Set designer for community theater</li>
+        </ul>
+        <img src="https://static.vecteezy.com/system/resources/previews/006/329/611/original/idea-thinking-outside-the-box-content-development-brainstorming-creativity-project-and-research-creative-soutions-learning-education-flat-design-for-mobile-and-web-graphics-illustration-vector.jpg"alt="Group sitting around a lighbulb" width="300">
+        <ul>
+            <strong><p class="skill-titles">Legal Knowledge</p></strong>
+            <li>Legal advisor for civil rights organizations</li>
+            <li>Volunteer for legal aid clinics</li>
+            <li>Policy researcher for advocacy groups</li>
+        </ul>
+      <img src="https://png.pngtree.com/png-vector/20230728/ourmid/pngtree-legal-clipart-businessman-standing-with-balance-scales-and-files-holding-documents-vector-png-image_6809681.png" alt="Lawyer standing by a scale" width="300px">
+        <ul>
+            <strong><p class="skill-titles">Sports Skills</p></strong>
+            <li>Coaching</li>
+            <li>Park runs</li>
+            <li>Life guard (swimming)</li>
+        </ul>
+        <img src="https://media.istockphoto.com/id/857602376/vector/kids-sport.jpg?s=612x612&w=0&k=20&c=wbiE_eHMsxLYDn7igfXcjUzybjIAICIFiRaBWcWW1eM=" alt="Kids standing with their respective sports tools" width="300">
+        <ul>
+            <strong><p class="skill-titles">Cooking Skills</p></strong>
+            <li>Cook for soup kitchen</li>
+            <li>Teach cooking classes</li>
+            <li>Send goods to hospitals, retirement homes, etc.</li>
+        </ul>
+        <img src="https://st5.depositphotos.com/31854172/66932/v/450/depositphotos_669327548-stock-illustration-young-woman-cooking-kitchen-housewife.jpg" alt="Lady cooking" width="300px">
+    </div>
+      <!--Credits-->
+ <p style="color:black; background-color: rgb(251,251,243); padding: 50px;">Created by PandaBytes</p>
+ <img src="images/Panda Bytes.jpeg" width="70px" style="position: relative; left:250px; bottom:115px; border: 0;" >
+
+    <!-- End page content -->
+     <!--TAVD LOGO-->
+
+  <img src="images/TAVD Logo.png" width="80px" style="position: fixed;bottom: 25px; right:20px; border: none;">
+    </div>
+    
+
+<script>
+// Sidebar open/close scripts
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

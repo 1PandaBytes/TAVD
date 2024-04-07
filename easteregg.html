@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+  .dark-red {
+  background-color: #8B0000; }
+  .red-text{color:#8B0000}
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+.white{color:white;}
+
+a:link {
+                color: blue;
+            }
+            a:visited {
+                color: purple;
+            }
+            a:hover { 
+                background-color: lightblue;
+            }  
+            a:active {
+                background-color:lightblue);
+            } 
+            a:focus {
+                background-color: lightblue;
+                .page{border-style:solid;}
+            }
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar dark-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a class href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px; color:white; text-decoration: none; position:relative; left:240px;" >X</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64" style=color:white; ><b><strong>The Australian Volunteering Directory</strong></b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <nav>
+      <a class="page" href="./index.html" style="color: white; text-decoration: none;">Home</a><br><br>
+<a class="page" href="./skills.html" style="color: white; text-decoration: none;">Skill sets</a><br><br>
+<a class="page" href="./map.html" style="color: white; text-decoration: none;">Global opportunities</a><br><br>
+<a class="page" href="./founding.html" style="color: white; text-decoration: none;">Service entrepreneurship</a><br><br>
+<a class="page" href="./donate.html" style="color: white; text-decoration: none;">Charities</a><br><br>
+<a class="page" href="./easteregg.html" style="color: white; text-decoration: none;">Where the day goes..</a><br><br>
+
+    </nav>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large dark-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button dark-red w3-margin-right" onclick="w3_open()" style="color: white">☰</a>
+  <span class="white">The Australia Volunteering Directory</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large white=" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Where the day goes...</b></h1>
+    <hr style="width:50px;border:5px solid darkred" class="w3-round">
+    <h2 class=" red-text"><b>Easter egg:</b></h2>
+    <p>Here at TAVD we understand that life can seem too busy to volunteer.  You may think that one person isn’t going to make a difference. However, if everyone thought that way there would be no volunteers.  A few minutes of your time and expertise can make a world or difference to someone else. So, we implore you to give it a try. Volunteer. We promise you. It’s worth it.<br><br>
+        Now as a reward for reading through our entire monologue click on the egg below:
+
+    <br><br>  <a href="https://neal.fun/where-does-the-day-go/"><img src="https://mcprod.discountpartysupplies.com.au/media/catalog/product/e/a/eastwsp08.jpg?auto=webp&format=pjpg&width=640&height=640&fit=cover" alt="easter egg" width="200px" target="_blank";></a>
+        <br><br>Then you will truly know where you day goes so you can plan accordingly making more informed descisions. In fact, why don’t you pencil in some time for volunteering while you're at it?</p>
+
+
+      </p>
+  </div>
+  <!--Credits-->
+ <p style="color:black; background-color: rgb(251,251,243); padding: 50px;">Created by PandaBytes</p>
+ <img src="images/Panda Bytes.jpeg" width="70px" style="position: relative; left:250px; bottom:115px" >
+
+
+<!-- End page content -->
+ <!--TAVD LOGO-->
+ <img src="images/TAVD Logo.png" width="80px" style="position: fixed;bottom: 25px; right:20px">
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+
+</script>
+
+</body>
+</html>
